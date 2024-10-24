@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity3"
+    android:background="#DFF2EB">
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:gravity="center">
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@color/black"
+              android:text="Singup"
+              android:gravity="center"
+              android:textSize="25sp"
+              android:fontFamily="sans-serif-smallcaps"/>
+
+          <EditText
+              android:id="@+id/editTextNom"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Nom"
+              android:inputType="textPersonName"
+              android:background="@drawable/edit_back"
+              android:padding="10dp"
+              android:layout_margin="16dp"
+              />
+
+          <!-- EditText pour le prénom -->
+          <EditText
+              android:id="@+id/editTextPrenom"
+              android:background="@drawable/edit_back"
+              android:layout_margin="16dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Prénom"
+              android:inputType="textPersonName"
+              android:padding="10dp"/>
+
+          <!-- EditText pour l'email -->
+          <EditText
+              android:id="@+id/editTextEmail"
+              android:background="@drawable/edit_back"
+              android:layout_margin="16dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Email"
+              android:inputType="textEmailAddress"
+              android:padding="10dp"/>
+
+          <!-- EditText pour le mot de passe -->
+          <EditText
+              android:layout_margin="16dp"
+              android:id="@+id/editTextMotDePasse"
+              android:background="@drawable/edit_back"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:hint="Mot de passe"
+              android:inputType="textPassword"
+              android:padding="10dp"/>
+
+          <!-- Bouton "Sign Up" -->
+          <Button
+              android:id="@+id/buttonSignUp"
+              android:text="Sign Up"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_margin="16dp"
+              android:textColor="@color/white"
+              android:backgroundTint="#4A628A"/>
+
+          <!-- TextView pour afficher le résultat -->
+          <TextView
+              android:id="@+id/textViewResult"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="--"
+              android:padding="10dp"
+              android:textSize="16sp"/>
+
+
+  </LinearLayout>
+
+        <!-- EditText pour le nom -->
+
+</LinearLayout>
